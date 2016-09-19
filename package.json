@@ -1,0 +1,31 @@
+{
+  "name": "df16",
+  "version": "1.0.0",
+  "description": "df16 npm demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests",
+    "clean": "rm -rf build/*",
+    "prebuild": "npm run clean",
+    "build": "webpack --config webpack.config.js",
+    "postbuild": "npm run zip",
+    "zip": "cd build && zip -vr ../src/staticresources/df16.resource *",
+    "deploy:sr": "dmc deploy src/staticresources/*"
+  },
+  "repository": "https://github.com/kevinohara80/df16-npm-demo.git",
+  "keywords": [
+    "npm",
+    "df16",
+    "dreamforce",
+    "demo"
+  ],
+  "author": "Kevin O'Hara",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.13.0",
+    "webpack": "^1.13.2"
+  }
+}

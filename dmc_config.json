@@ -1,0 +1,8 @@
+{
+  "default_org": "df16",
+  "deploy_mode": "dynamic",
+  "api_version": 32,
+  "colorize": true,
+  "background": "light",
+  "log_level": "info"
+}
