@@ -4,7 +4,6 @@
   "description": "df16 npm demo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./tests",
     "clean": "rm -rf build/*",
     "prebuild": "npm run clean",
     "build": "webpack --config webpack.config.js",
