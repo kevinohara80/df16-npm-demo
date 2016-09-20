@@ -10,7 +10,9 @@
     "build": "webpack --config webpack.config.js",
     "postbuild": "npm run zip",
     "zip": "cd build && zip -vr ../src/staticresources/df16.resource *",
-    "deploy:sr": "dmc deploy src/staticresources/*"
+    "fetch": "dmc retrieve src/{classes,triggers,pages,components,aura}/*",
+    "predeploy": "npm run build",
+    "deploy": "dmc deploy src/**/*"
   },
   "repository": "https://github.com/kevinohara80/df16-npm-demo.git",
   "keywords": [
