@@ -49,12 +49,31 @@
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var foo = 'Hello World';
-	alert(foo);
+	var _echo = __webpack_require__(2);
+	
+	var runTest = function runTest(input) {
+	  return (0, _echo.say)(input);
+	};
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.say = say;
+	// test es2015 module
+	
+	function say(input) {
+	  return console.log("You said " + input);
+	}
 
 /***/ }
 /******/ ]);
