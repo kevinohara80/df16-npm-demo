@@ -46,6 +46,10 @@ module.exports = {
         test: /\.jsx?$/,
         loaders: [ 'babel' ],
         include: path.join(__dirname, 'clients')
+      },
+      {
+        test: /\.json$/,
+        loaders: [ 'json' ]
       }
     ]
   },
