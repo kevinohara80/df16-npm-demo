@@ -1,7 +1,8 @@
 node_modules
 npm-debug.log
+build
 src/staticresources/df16.resource
 src/classes/*
 src/pages/*
 src/components/*
-src/triggers/*
+src/triggers/*build

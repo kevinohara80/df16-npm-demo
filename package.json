@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf build/*",
-    "prebuild": "npm run clean",
+    "prebuild": "npm run clean && mkdir -p src/staticresources",
     "build": "webpack --config webpack.config.js",
     "postbuild": "npm run zip",
     "zip": "cd build && zip -vr ../src/staticresources/df16.resource *",
