@@ -3,3 +3,5 @@
 import { say } from './scripts/echo';
 
 const runTest = (input) => say(input);
+
+const getVersion = () => require('../package.json').version;
